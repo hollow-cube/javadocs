@@ -766,7 +766,7 @@ implements <a href="../command/CommandSender.html" title="interface in net.mines
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Sets and refresh client food saturation.</div>
 </div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#setGameMode(net.minestom.server.entity.GameMode)" class="member-name-link">setGameMode</a><wbr>(@NotNull <a href="GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;gameMode)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Changes the player <a href="GameMode.html" title="enum class in net.minestom.server.entity"><code>GameMode</code></a></div>
@@ -2019,12 +2019,14 @@ implements <a href="../command/CommandSender.html" title="interface in net.mines
 <li>
 <section class="detail" id="setGameMode(net.minestom.server.entity.GameMode)">
 <h3>setGameMode</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">setGameMode</span><wbr><span class="parameters">(@NotNull
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">setGameMode</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;gameMode)</span></div>
 <div class="block">Changes the player <a href="GameMode.html" title="enum class in net.minestom.server.entity"><code>GameMode</code></a></div>
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>gameMode</code> - the new player GameMode</dd>
+<dt>Returns:</dt>
+<dd>true if the gamemode was changed successfully, false otherwise (cancelled by event)</dd>
 </dl>
 </section>
 </li>
