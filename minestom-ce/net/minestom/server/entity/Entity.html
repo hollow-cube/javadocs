@@ -117,73 +117,76 @@ implements <a href="../Viewable.html" title="interface in net.minestom.server">V
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>protected <a href="../instance/Chunk.html" title="class in net.minestom.server.instance">Chunk</a></code></div>
-<div class="col-second even-row-color"><code><a href="#currentChunk" class="member-name-link">currentChunk</a></code></div>
+<div class="col-first even-row-color"><code>protected <a href="../collision/BoundingBox.html" title="class in net.minestom.server.collision">BoundingBox</a></code></div>
+<div class="col-second even-row-color"><code><a href="#boundingBox" class="member-name-link">boundingBox</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected <a href="metadata/EntityMeta.html" title="class in net.minestom.server.entity.metadata">EntityMeta</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#entityMeta" class="member-name-link">entityMeta</a></code></div>
+<div class="col-first odd-row-color"><code>protected <a href="../instance/Chunk.html" title="class in net.minestom.server.instance">Chunk</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#currentChunk" class="member-name-link">currentChunk</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected <a href="EntityType.html" title="interface in net.minestom.server.entity">EntityType</a></code></div>
-<div class="col-second even-row-color"><code><a href="#entityType" class="member-name-link">entityType</a></code></div>
+<div class="col-first even-row-color"><code>protected <a href="metadata/EntityMeta.html" title="class in net.minestom.server.entity.metadata">EntityMeta</a></code></div>
+<div class="col-second even-row-color"><code><a href="#entityMeta" class="member-name-link">entityMeta</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected double</code></div>
-<div class="col-second odd-row-color"><code><a href="#gravityAcceleration" class="member-name-link">gravityAcceleration</a></code></div>
-<div class="col-last odd-row-color">
+<div class="col-first odd-row-color"><code>protected <a href="EntityType.html" title="interface in net.minestom.server.entity">EntityType</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#entityType" class="member-name-link">entityType</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected double</code></div>
+<div class="col-second even-row-color"><code><a href="#gravityAcceleration" class="member-name-link">gravityAcceleration</a></code></div>
+<div class="col-last even-row-color">
 <div class="block">Acceleration on the Y axle due to gravity</div>
 </div>
-<div class="col-first even-row-color"><code>protected double</code></div>
-<div class="col-second even-row-color"><code><a href="#gravityDragPerTick" class="member-name-link">gravityDragPerTick</a></code></div>
-<div class="col-last even-row-color">
+<div class="col-first odd-row-color"><code>protected double</code></div>
+<div class="col-second odd-row-color"><code><a href="#gravityDragPerTick" class="member-name-link">gravityDragPerTick</a></code></div>
+<div class="col-last odd-row-color">
 <div class="block">The amount of drag applied on the Y axle.</div>
 </div>
-<div class="col-first odd-row-color"><code>protected int</code></div>
-<div class="col-second odd-row-color"><code><a href="#gravityTickCount" class="member-name-link">gravityTickCount</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected boolean</code></div>
-<div class="col-second even-row-color"><code><a href="#hasCollision" class="member-name-link">hasCollision</a></code></div>
+<div class="col-first even-row-color"><code>protected int</code></div>
+<div class="col-second even-row-color"><code><a href="#gravityTickCount" class="member-name-link">gravityTickCount</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
 <div class="col-first odd-row-color"><code>protected boolean</code></div>
-<div class="col-second odd-row-color"><code><a href="#hasPhysics" class="member-name-link">hasPhysics</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected <a href="../instance/Instance.html" title="class in net.minestom.server.instance">Instance</a></code></div>
-<div class="col-second even-row-color"><code><a href="#instance" class="member-name-link">instance</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected <a href="../coordinate/Pos.html" title="class in net.minestom.server.coordinate">Pos</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#lastSyncedPosition" class="member-name-link">lastSyncedPosition</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#hasCollision" class="member-name-link">hasCollision</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected boolean</code></div>
-<div class="col-second even-row-color"><code><a href="#lastVelocityWasZero" class="member-name-link">lastVelocityWasZero</a></code></div>
+<div class="col-second even-row-color"><code><a href="#hasPhysics" class="member-name-link">hasPhysics</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected <a href="Metadata.html" title="class in net.minestom.server.entity">Metadata</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#metadata" class="member-name-link">metadata</a></code></div>
-<div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected boolean</code></div>
-<div class="col-second even-row-color"><code><a href="#onGround" class="member-name-link">onGround</a></code></div>
-<div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected <a href="../coordinate/Pos.html" title="class in net.minestom.server.coordinate">Pos</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#position" class="member-name-link">position</a></code></div>
+<div class="col-first odd-row-color"><code>protected <a href="../instance/Instance.html" title="class in net.minestom.server.instance">Instance</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#instance" class="member-name-link">instance</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
 <div class="col-first even-row-color"><code>protected <a href="../coordinate/Pos.html" title="class in net.minestom.server.coordinate">Pos</a></code></div>
-<div class="col-second even-row-color"><code><a href="#previousPosition" class="member-name-link">previousPosition</a></code></div>
+<div class="col-second even-row-color"><code><a href="#lastSyncedPosition" class="member-name-link">lastSyncedPosition</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected final <a href="../instance/EntityTracker.Update.html" title="interface in net.minestom.server.instance">EntityTracker.Update</a>&lt;<a href="Entity.html" title="class in net.minestom.server.entity">Entity</a>&gt;</code></div>
-<div class="col-second odd-row-color"><code><a href="#trackingUpdate" class="member-name-link">trackingUpdate</a></code></div>
+<div class="col-first odd-row-color"><code>protected boolean</code></div>
+<div class="col-second odd-row-color"><code><a href="#lastVelocityWasZero" class="member-name-link">lastVelocityWasZero</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></code></div>
-<div class="col-second even-row-color"><code><a href="#uuid" class="member-name-link">uuid</a></code></div>
+<div class="col-first even-row-color"><code>protected <a href="Metadata.html" title="class in net.minestom.server.entity">Metadata</a></code></div>
+<div class="col-second even-row-color"><code><a href="#metadata" class="member-name-link">metadata</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected <a href="Entity.html" title="class in net.minestom.server.entity">Entity</a></code></div>
-<div class="col-second odd-row-color"><code><a href="#vehicle" class="member-name-link">vehicle</a></code></div>
+<div class="col-first odd-row-color"><code>protected boolean</code></div>
+<div class="col-second odd-row-color"><code><a href="#onGround" class="member-name-link">onGround</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected <a href="../coordinate/Vec.html" title="class in net.minestom.server.coordinate">Vec</a></code></div>
-<div class="col-second even-row-color"><code><a href="#velocity" class="member-name-link">velocity</a></code></div>
+<div class="col-first even-row-color"><code>protected <a href="../coordinate/Pos.html" title="class in net.minestom.server.coordinate">Pos</a></code></div>
+<div class="col-second even-row-color"><code><a href="#position" class="member-name-link">position</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>protected final net.minestom.server.entity.EntityView</code></div>
-<div class="col-second odd-row-color"><code><a href="#viewEngine" class="member-name-link">viewEngine</a></code></div>
+<div class="col-first odd-row-color"><code>protected <a href="../coordinate/Pos.html" title="class in net.minestom.server.coordinate">Pos</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#previousPosition" class="member-name-link">previousPosition</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="Player.html" title="class in net.minestom.server.entity">Player</a>&gt;</code></div>
-<div class="col-second even-row-color"><code><a href="#viewers" class="member-name-link">viewers</a></code></div>
+<div class="col-first even-row-color"><code>protected final <a href="../instance/EntityTracker.Update.html" title="interface in net.minestom.server.instance">EntityTracker.Update</a>&lt;<a href="Entity.html" title="class in net.minestom.server.entity">Entity</a>&gt;</code></div>
+<div class="col-second even-row-color"><code><a href="#trackingUpdate" class="member-name-link">trackingUpdate</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html" title="class or interface in java.util" class="external-link">UUID</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#uuid" class="member-name-link">uuid</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected <a href="Entity.html" title="class in net.minestom.server.entity">Entity</a></code></div>
+<div class="col-second even-row-color"><code><a href="#vehicle" class="member-name-link">vehicle</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected <a href="../coordinate/Vec.html" title="class in net.minestom.server.coordinate">Vec</a></code></div>
+<div class="col-second odd-row-color"><code><a href="#velocity" class="member-name-link">velocity</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>protected final net.minestom.server.entity.EntityView</code></div>
+<div class="col-second even-row-color"><code><a href="#viewEngine" class="member-name-link">viewEngine</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>protected final <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html" title="class or interface in java.util" class="external-link">Set</a>&lt;<a href="Player.html" title="class in net.minestom.server.entity">Player</a>&gt;</code></div>
+<div class="col-second odd-row-color"><code><a href="#viewers" class="member-name-link">viewers</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -865,6 +868,12 @@ implements <a href="../Viewable.html" title="interface in net.minestom.server">V
 <section class="detail" id="onGround">
 <h3>onGround</h3>
 <div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">onGround</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="boundingBox">
+<h3>boundingBox</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="../collision/BoundingBox.html" title="class in net.minestom.server.collision">BoundingBox</a></span>&nbsp;<span class="element-name">boundingBox</span></div>
 </section>
 </li>
 <li>
