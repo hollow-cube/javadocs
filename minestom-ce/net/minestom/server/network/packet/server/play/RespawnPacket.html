@@ -82,7 +82,7 @@ loadScripts(document, 'script');</script>
 <dd><code><a href="../../../NetworkBuffer.Writer.html" title="interface in net.minestom.server.network">NetworkBuffer.Writer</a></code>, <code><a href="../SendablePacket.html" title="interface in net.minestom.server.network.packet.server">SendablePacket</a></code>, <code><a href="../ServerPacket.html" title="interface in net.minestom.server.network.packet.server">ServerPacket</a></code></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">RespawnPacket</span>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;dimensionType, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;worldName, long&nbsp;hashedSeed, <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;gameMode, <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;previousGameMode, boolean&nbsp;isDebug, boolean&nbsp;isFlat, byte&nbsp;dataToCopy, <a href="data/DeathLocation.html" title="class in net.minestom.server.network.packet.server.play.data">DeathLocation</a>&nbsp;deathLocation, int&nbsp;portalCooldown)
+<div class="type-signature"><span class="modifiers">public record </span><span class="element-name type-name-label">RespawnPacket</span>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;dimensionType, <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;worldName, long&nbsp;hashedSeed, <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;gameMode, <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;previousGameMode, boolean&nbsp;isDebug, boolean&nbsp;isFlat, <a href="data/DeathLocation.html" title="class in net.minestom.server.network.packet.server.play.data">DeathLocation</a>&nbsp;deathLocation, int&nbsp;portalCooldown, int&nbsp;copyData)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a>
 implements <a href="../ServerPacket.html" title="interface in net.minestom.server.network.packet.server">ServerPacket</a></span></div>
 </section>
@@ -97,15 +97,18 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Field</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color"><code>static final byte</code></div>
+<div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#COPY_ALL" class="member-name-link">COPY_ALL</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-first odd-row-color"><code>static final byte</code></div>
+<div class="col-first odd-row-color"><code>static final int</code></div>
 <div class="col-second odd-row-color"><code><a href="#COPY_ATTRIBUTES" class="member-name-link">COPY_ATTRIBUTES</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
-<div class="col-first even-row-color"><code>static final byte</code></div>
+<div class="col-first even-row-color"><code>static final int</code></div>
 <div class="col-second even-row-color"><code><a href="#COPY_METADATA" class="member-name-link">COPY_METADATA</a></code></div>
 <div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final int</code></div>
+<div class="col-second odd-row-color"><code><a href="#COPY_NONE" class="member-name-link">COPY_NONE</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -119,16 +122,16 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <div class="table-header col-last">Description</div>
 <div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(net.minestom.server.network.NetworkBuffer)" class="member-name-link">RespawnPacket</a><wbr>(@NotNull <a href="../../../NetworkBuffer.html" title="class in net.minestom.server.network">NetworkBuffer</a>&nbsp;reader)</code></div>
 <div class="col-last even-row-color">&nbsp;</div>
-<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String,long,net.minestom.server.entity.GameMode,net.minestom.server.entity.GameMode,boolean,boolean,byte,net.minestom.server.network.packet.server.play.data.DeathLocation,int)" class="member-name-link">RespawnPacket</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;dimensionType,
+<div class="col-constructor-name odd-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String,long,net.minestom.server.entity.GameMode,net.minestom.server.entity.GameMode,boolean,boolean,net.minestom.server.network.packet.server.play.data.DeathLocation,int,int)" class="member-name-link">RespawnPacket</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;dimensionType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;worldName,
  long&nbsp;hashedSeed,
  <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;gameMode,
  <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;previousGameMode,
  boolean&nbsp;isDebug,
  boolean&nbsp;isFlat,
- byte&nbsp;dataToCopy,
  <a href="data/DeathLocation.html" title="class in net.minestom.server.network.packet.server.play.data">DeathLocation</a>&nbsp;deathLocation,
- int&nbsp;portalCooldown)</code></div>
+ int&nbsp;portalCooldown,
+ int&nbsp;copyData)</code></div>
 <div class="col-last odd-row-color">
 <div class="block">Creates an instance of a <code>RespawnPacket</code> record class.</div>
 </div>
@@ -146,10 +149,10 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>byte</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#dataToCopy()" class="member-name-link">dataToCopy</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#copyData()" class="member-name-link">copyData</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
-<div class="block">Returns the value of the <code>dataToCopy</code> record component.</div>
+<div class="block">Returns the value of the <code>copyData</code> record component.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="data/DeathLocation.html" title="class in net.minestom.server.network.packet.server.play.data">DeathLocation</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#deathLocation()" class="member-name-link">deathLocation</a>()</code></div>
@@ -172,7 +175,7 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <div class="block">Returns the value of the <code>gameMode</code> record component.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getId()" class="member-name-link">getId</a>()</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getId(net.minestom.server.network.ConnectionState)" class="member-name-link">getId</a><wbr>(@NotNull <a href="../../../ConnectionState.html" title="enum class in net.minestom.server.network">ConnectionState</a>&nbsp;state)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Gets the id of this packet.</div>
 </div>
@@ -237,9 +240,23 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <h2>Field Details</h2>
 <ul class="member-list">
 <li>
+<section class="detail" id="COPY_NONE">
+<h3>COPY_NONE</h3>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">COPY_NONE</span></div>
+<dl class="notes">
+<dt>See Also:</dt>
+<dd>
+<ul class="see-list">
+<li><a href="../../../../../../../constant-values.html#net.minestom.server.network.packet.server.play.RespawnPacket.COPY_NONE">Constant Field Values</a></li>
+</ul>
+</dd>
+</dl>
+</section>
+</li>
+<li>
 <section class="detail" id="COPY_ATTRIBUTES">
 <h3>COPY_ATTRIBUTES</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name">COPY_ATTRIBUTES</span></div>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">COPY_ATTRIBUTES</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -253,7 +270,7 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <li>
 <section class="detail" id="COPY_METADATA">
 <h3>COPY_METADATA</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name">COPY_METADATA</span></div>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">COPY_METADATA</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -267,7 +284,7 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <li>
 <section class="detail" id="COPY_ALL">
 <h3>COPY_ALL</h3>
-<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name">COPY_ALL</span></div>
+<div class="member-signature"><span class="modifiers">public static final</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">COPY_ALL</span></div>
 <dl class="notes">
 <dt>See Also:</dt>
 <dd>
@@ -294,7 +311,7 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 </section>
 </li>
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.String,long,net.minestom.server.entity.GameMode,net.minestom.server.entity.GameMode,boolean,boolean,byte,net.minestom.server.network.packet.server.play.data.DeathLocation,int)">
+<section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.String,long,net.minestom.server.entity.GameMode,net.minestom.server.entity.GameMode,boolean,boolean,net.minestom.server.network.packet.server.play.data.DeathLocation,int,int)">
 <h3>RespawnPacket</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">RespawnPacket</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;dimensionType,
  <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;worldName,
@@ -303,9 +320,9 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
  <a href="../../../../entity/GameMode.html" title="enum class in net.minestom.server.entity">GameMode</a>&nbsp;previousGameMode,
  boolean&nbsp;isDebug,
  boolean&nbsp;isFlat,
- byte&nbsp;dataToCopy,
  <a href="data/DeathLocation.html" title="class in net.minestom.server.network.packet.server.play.data">DeathLocation</a>&nbsp;deathLocation,
- int&nbsp;portalCooldown)</span></div>
+ int&nbsp;portalCooldown,
+ int&nbsp;copyData)</span></div>
 <div class="block">Creates an instance of a <code>RespawnPacket</code> record class.</div>
 <dl class="notes">
 <dt>Parameters:</dt>
@@ -316,9 +333,9 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <dd><code>previousGameMode</code> - the value for the <code>previousGameMode</code> record component</dd>
 <dd><code>isDebug</code> - the value for the <code>isDebug</code> record component</dd>
 <dd><code>isFlat</code> - the value for the <code>isFlat</code> record component</dd>
-<dd><code>dataToCopy</code> - the value for the <code>dataToCopy</code> record component</dd>
 <dd><code>deathLocation</code> - the value for the <code>deathLocation</code> record component</dd>
 <dd><code>portalCooldown</code> - the value for the <code>portalCooldown</code> record component</dd>
+<dd><code>copyData</code> - the value for the <code>copyData</code> record component</dd>
 </dl>
 </section>
 </li>
@@ -342,16 +359,17 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 </section>
 </li>
 <li>
-<section class="detail" id="getId()">
+<section class="detail" id="getId(net.minestom.server.network.ConnectionState)">
 <h3>getId</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getId</span>()</div>
-<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../ServerPacket.html#getId()">ServerPacket</a></code></span></div>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">getId</span><wbr><span class="parameters">(@NotNull
+ @NotNull <a href="../../../ConnectionState.html" title="enum class in net.minestom.server.network">ConnectionState</a>&nbsp;state)</span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from interface:&nbsp;<code><a href="../ServerPacket.html#getId(net.minestom.server.network.ConnectionState)">ServerPacket</a></code></span></div>
 <div class="block">Gets the id of this packet.
  <p>
  Written in the final buffer header so it needs to match the client id.</div>
 <dl class="notes">
 <dt>Specified by:</dt>
-<dd><code><a href="../ServerPacket.html#getId()">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../ServerPacket.html" title="interface in net.minestom.server.network.packet.server">ServerPacket</a></code></dd>
+<dd><code><a href="../ServerPacket.html#getId(net.minestom.server.network.ConnectionState)">getId</a></code>&nbsp;in interface&nbsp;<code><a href="../ServerPacket.html" title="interface in net.minestom.server.network.packet.server">ServerPacket</a></code></dd>
 <dt>Returns:</dt>
 <dd>the id of this packet</dd>
 </dl>
@@ -476,17 +494,6 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 </section>
 </li>
 <li>
-<section class="detail" id="dataToCopy()">
-<h3>dataToCopy</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">byte</span>&nbsp;<span class="element-name">dataToCopy</span>()</div>
-<div class="block">Returns the value of the <code>dataToCopy</code> record component.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>the value of the <code>dataToCopy</code> record component</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="deathLocation()">
 <h3>deathLocation</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type"><a href="data/DeathLocation.html" title="class in net.minestom.server.network.packet.server.play.data">DeathLocation</a></span>&nbsp;<span class="element-name">deathLocation</span>()</div>
@@ -505,6 +512,17 @@ implements <a href="../ServerPacket.html" title="interface in net.minestom.serve
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the value of the <code>portalCooldown</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="copyData()">
+<h3>copyData</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">copyData</span>()</div>
+<div class="block">Returns the value of the <code>copyData</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>copyData</code> record component</dd>
 </dl>
 </section>
 </li>

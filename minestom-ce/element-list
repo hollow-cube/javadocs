@@ -5,6 +5,7 @@ net.minestom.server.adventure
 net.minestom.server.adventure.audience
 net.minestom.server.adventure.bossbar
 net.minestom.server.adventure.provider
+net.minestom.server.adventure.serializer.nbt
 net.minestom.server.attribute
 net.minestom.server.collision
 net.minestom.server.color
@@ -33,7 +34,6 @@ net.minestom.server.entity.metadata
 net.minestom.server.entity.metadata.ambient
 net.minestom.server.entity.metadata.animal
 net.minestom.server.entity.metadata.animal.tameable
-net.minestom.server.entity.metadata.arrow
 net.minestom.server.entity.metadata.display
 net.minestom.server.entity.metadata.flying
 net.minestom.server.entity.metadata.golem
@@ -44,6 +44,7 @@ net.minestom.server.entity.metadata.monster.raider
 net.minestom.server.entity.metadata.monster.skeleton
 net.minestom.server.entity.metadata.monster.zombie
 net.minestom.server.entity.metadata.other
+net.minestom.server.entity.metadata.projectile
 net.minestom.server.entity.metadata.villager
 net.minestom.server.entity.metadata.water
 net.minestom.server.entity.metadata.water.fish
@@ -64,7 +65,6 @@ net.minestom.server.extras
 net.minestom.server.extras.bungee
 net.minestom.server.extras.lan
 net.minestom.server.extras.mojangAuth
-net.minestom.server.extras.optifine
 net.minestom.server.extras.query
 net.minestom.server.extras.query.event
 net.minestom.server.extras.query.response
@@ -88,19 +88,24 @@ net.minestom.server.item.firework
 net.minestom.server.item.metadata
 net.minestom.server.item.rule
 net.minestom.server.listener
+net.minestom.server.listener.common
 net.minestom.server.listener.manager
+net.minestom.server.listener.preplay
 net.minestom.server.map
 net.minestom.server.map.framebuffers
 net.minestom.server.message
 net.minestom.server.monitoring
 net.minestom.server.network
 net.minestom.server.network.packet.client
+net.minestom.server.network.packet.client.common
+net.minestom.server.network.packet.client.configuration
 net.minestom.server.network.packet.client.handshake
 net.minestom.server.network.packet.client.login
 net.minestom.server.network.packet.client.play
 net.minestom.server.network.packet.client.status
 net.minestom.server.network.packet.server
-net.minestom.server.network.packet.server.handshake
+net.minestom.server.network.packet.server.common
+net.minestom.server.network.packet.server.configuration
 net.minestom.server.network.packet.server.login
 net.minestom.server.network.packet.server.play
 net.minestom.server.network.packet.server.play.data
@@ -113,7 +118,6 @@ net.minestom.server.ping
 net.minestom.server.potion
 net.minestom.server.recipe
 net.minestom.server.registry
-net.minestom.server.resourcepack
 net.minestom.server.scoreboard
 net.minestom.server.snapshot
 net.minestom.server.sound
