@@ -965,16 +965,21 @@ implements <a href="../command/CommandSender.html" title="interface in net.mines
 <div class="block">Called each tick.</div>
 </div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateOldViewer(net.minestom.server.entity.Player)" class="member-name-link">updateOldViewer</a><wbr>(@NotNull <a href="Player.html" title="class in net.minestom.server.entity">Player</a>&nbsp;player)</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateCloseInventoryState(byte)" class="member-name-link">updateCloseInventoryState</a><wbr>(byte&nbsp;windowId)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Updates the player's inventory state, given a window id to compare against.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>void</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateOldViewer(net.minestom.server.entity.Player)" class="member-name-link">updateOldViewer</a><wbr>(@NotNull <a href="Player.html" title="class in net.minestom.server.entity">Player</a>&nbsp;player)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Called when a viewer must be destroyed.</div>
 </div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updatePose()" class="member-name-link">updatePose</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
-<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../snapshot/PlayerSnapshot.html" title="interface in net.minestom.server.snapshot">PlayerSnapshot</a></code></div>
-<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateSnapshot(net.minestom.server.snapshot.SnapshotUpdater)" class="member-name-link">updateSnapshot</a><wbr>(@NotNull <a href="../snapshot/SnapshotUpdater.html" title="interface in net.minestom.server.snapshot">SnapshotUpdater</a>&nbsp;updater)</code></div>
-<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updatePose()" class="member-name-link">updatePose</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="../snapshot/PlayerSnapshot.html" title="interface in net.minestom.server.snapshot">PlayerSnapshot</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#updateSnapshot(net.minestom.server.snapshot.SnapshotUpdater)" class="member-name-link">updateSnapshot</a><wbr>(@NotNull <a href="../snapshot/SnapshotUpdater.html" title="interface in net.minestom.server.snapshot">SnapshotUpdater</a>&nbsp;updater)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
 <div class="block">Updates the currently cached snapshot if required.</div>
 </div>
 </div>
@@ -2272,6 +2277,19 @@ implements <a href="../command/CommandSender.html" title="interface in net.mines
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">closeInventory</span>()</div>
 <div class="block">Closes the current inventory if there is any.
  It closes the player inventory (when opened) if <a href="#getOpenInventory()"><code>getOpenInventory()</code></a> returns null.</div>
+</section>
+</li>
+<li>
+<section class="detail" id="updateCloseInventoryState(byte)">
+<h3>updateCloseInventoryState</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">void</span>&nbsp;<span class="element-name">updateCloseInventoryState</span><wbr><span class="parameters">(byte&nbsp;windowId)</span></div>
+<div class="block">Updates the player's inventory state, given a window id to compare against.
+ Note: This should only be used when receiving a <a href="../network/packet/client/play/ClientCloseWindowPacket.html" title="class in net.minestom.server.network.packet.client.play"><code>ClientCloseWindowPacket</code></a>.
+ Use <a href="#closeInventory()"><code>closeInventory()</code></a> instead for more general use.</div>
+<dl class="notes">
+<dt>Parameters:</dt>
+<dd><code>windowId</code> - The window id to compare against.</dd>
+</dl>
 </section>
 </li>
 <li>
