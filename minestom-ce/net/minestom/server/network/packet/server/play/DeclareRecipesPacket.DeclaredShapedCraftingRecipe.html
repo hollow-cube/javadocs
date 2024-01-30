@@ -86,7 +86,7 @@ loadScripts(document, 'script');</script>
 <dd><a href="DeclareRecipesPacket.html" title="class in net.minestom.server.network.packet.server.play">DeclareRecipesPacket</a></dd>
 </dl>
 <hr>
-<div class="type-signature"><span class="modifiers">public static record </span><span class="element-name type-name-label">DeclareRecipesPacket.DeclaredShapedCraftingRecipe</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipeId, int&nbsp;width, int&nbsp;height, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group, <a href="../../../../recipe/RecipeCategory.Crafting.html" title="enum class in net.minestom.server.recipe">RecipeCategory.Crafting</a>&nbsp;category, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DeclareRecipesPacket.Ingredient.html" title="class in net.minestom.server.network.packet.server.play">DeclareRecipesPacket.Ingredient</a>&gt;&nbsp;ingredients, @NotNull <a href="../../../../item/ItemStack.html" title="interface in net.minestom.server.item">ItemStack</a>&nbsp;result, boolean&nbsp;showNotification)
+<div class="type-signature"><span class="modifiers">public static record </span><span class="element-name type-name-label">DeclareRecipesPacket.DeclaredShapedCraftingRecipe</span>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipeId, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group, <a href="../../../../recipe/RecipeCategory.Crafting.html" title="enum class in net.minestom.server.recipe">RecipeCategory.Crafting</a>&nbsp;category, int&nbsp;width, int&nbsp;height, @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DeclareRecipesPacket.Ingredient.html" title="class in net.minestom.server.network.packet.server.play">DeclareRecipesPacket.Ingredient</a>&gt;&nbsp;ingredients, @NotNull <a href="../../../../item/ItemStack.html" title="interface in net.minestom.server.item">ItemStack</a>&nbsp;result, boolean&nbsp;showNotification)
 <span class="extends-implements">extends <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html" title="class or interface in java.lang" class="external-link">Record</a>
 implements <a href="DeclareRecipesPacket.DeclaredRecipe.html" title="interface in net.minestom.server.network.packet.server.play">DeclareRecipesPacket.DeclaredRecipe</a></span></div>
 </section>
@@ -100,11 +100,11 @@ implements <a href="DeclareRecipesPacket.DeclaredRecipe.html" title="interface i
 <div class="summary-table two-column-summary">
 <div class="table-header col-first">Constructor</div>
 <div class="table-header col-last">Description</div>
-<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,int,int,java.lang.String,net.minestom.server.recipe.RecipeCategory.Crafting,java.util.List,net.minestom.server.item.ItemStack,boolean)" class="member-name-link">DeclaredShapedCraftingRecipe</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipeId,
- int&nbsp;width,
- int&nbsp;height,
+<div class="col-constructor-name even-row-color"><code><a href="#%3Cinit%3E(java.lang.String,java.lang.String,net.minestom.server.recipe.RecipeCategory.Crafting,int,int,java.util.List,net.minestom.server.item.ItemStack,boolean)" class="member-name-link">DeclaredShapedCraftingRecipe</a><wbr>(@NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipeId,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group,
  <a href="../../../../recipe/RecipeCategory.Crafting.html" title="enum class in net.minestom.server.recipe">RecipeCategory.Crafting</a>&nbsp;category,
+ int&nbsp;width,
+ int&nbsp;height,
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DeclareRecipesPacket.Ingredient.html" title="class in net.minestom.server.network.packet.server.play">DeclareRecipesPacket.Ingredient</a>&gt;&nbsp;ingredients,
  @NotNull <a href="../../../../item/ItemStack.html" title="interface in net.minestom.server.item">ItemStack</a>&nbsp;result,
  boolean&nbsp;showNotification)</code></div>
@@ -206,16 +206,16 @@ implements <a href="DeclareRecipesPacket.DeclaredRecipe.html" title="interface i
 <h2>Constructor Details</h2>
 <ul class="member-list">
 <li>
-<section class="detail" id="&lt;init&gt;(java.lang.String,int,int,java.lang.String,net.minestom.server.recipe.RecipeCategory.Crafting,java.util.List,net.minestom.server.item.ItemStack,boolean)">
+<section class="detail" id="&lt;init&gt;(java.lang.String,java.lang.String,net.minestom.server.recipe.RecipeCategory.Crafting,int,int,java.util.List,net.minestom.server.item.ItemStack,boolean)">
 <h3>DeclaredShapedCraftingRecipe</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="element-name">DeclaredShapedCraftingRecipe</span><wbr><span class="parameters">(@NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;recipeId,
- int&nbsp;width,
- int&nbsp;height,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;group,
  @NotNull
  <a href="../../../../recipe/RecipeCategory.Crafting.html" title="enum class in net.minestom.server.recipe">RecipeCategory.Crafting</a>&nbsp;category,
+ int&nbsp;width,
+ int&nbsp;height,
  @NotNull
  @NotNull <a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html" title="class or interface in java.util" class="external-link">List</a>&lt;<a href="DeclareRecipesPacket.Ingredient.html" title="class in net.minestom.server.network.packet.server.play">DeclareRecipesPacket.Ingredient</a>&gt;&nbsp;ingredients,
  @NotNull
@@ -225,10 +225,10 @@ implements <a href="DeclareRecipesPacket.DeclaredRecipe.html" title="interface i
 <dl class="notes">
 <dt>Parameters:</dt>
 <dd><code>recipeId</code> - the value for the <code>recipeId</code> record component</dd>
-<dd><code>width</code> - the value for the <code>width</code> record component</dd>
-<dd><code>height</code> - the value for the <code>height</code> record component</dd>
 <dd><code>group</code> - the value for the <code>group</code> record component</dd>
 <dd><code>category</code> - the value for the <code>category</code> record component</dd>
+<dd><code>width</code> - the value for the <code>width</code> record component</dd>
+<dd><code>height</code> - the value for the <code>height</code> record component</dd>
 <dd><code>ingredients</code> - the value for the <code>ingredients</code> record component</dd>
 <dd><code>result</code> - the value for the <code>result</code> record component</dd>
 <dd><code>showNotification</code> - the value for the <code>showNotification</code> record component</dd>
@@ -328,28 +328,6 @@ implements <a href="DeclareRecipesPacket.DeclaredRecipe.html" title="interface i
 </section>
 </li>
 <li>
-<section class="detail" id="width()">
-<h3>width</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">width</span>()</div>
-<div class="block">Returns the value of the <code>width</code> record component.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>the value of the <code>width</code> record component</dd>
-</dl>
-</section>
-</li>
-<li>
-<section class="detail" id="height()">
-<h3>height</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">height</span>()</div>
-<div class="block">Returns the value of the <code>height</code> record component.</div>
-<dl class="notes">
-<dt>Returns:</dt>
-<dd>the value of the <code>height</code> record component</dd>
-</dl>
-</section>
-</li>
-<li>
 <section class="detail" id="group()">
 <h3>group</h3>
 <div class="member-signature"><span class="annotations">@NotNull
@@ -370,6 +348,28 @@ implements <a href="DeclareRecipesPacket.DeclaredRecipe.html" title="interface i
 <dl class="notes">
 <dt>Returns:</dt>
 <dd>the value of the <code>category</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="width()">
+<h3>width</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">width</span>()</div>
+<div class="block">Returns the value of the <code>width</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>width</code> record component</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="height()">
+<h3>height</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int</span>&nbsp;<span class="element-name">height</span>()</div>
+<div class="block">Returns the value of the <code>height</code> record component.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>the value of the <code>height</code> record component</dd>
 </dl>
 </section>
 </li>
