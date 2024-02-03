@@ -122,6 +122,12 @@ loadScripts(document, 'script');</script>
 <div class="col-first odd-row-color"><code>static enum&nbsp;</code></div>
 <div class="col-second odd-row-color"><code><a href="Registry.Resource.html" class="type-name-link" title="enum class in net.minestom.server.registry">Registry.Resource</a></code></div>
 <div class="col-last odd-row-color">&nbsp;</div>
+<div class="col-first even-row-color"><code>static final record&nbsp;</code></div>
+<div class="col-second even-row-color"><code><a href="Registry.TrimMaterialEntry.html" class="type-name-link" title="class in net.minestom.server.registry">Registry.TrimMaterialEntry</a></code></div>
+<div class="col-last even-row-color">&nbsp;</div>
+<div class="col-first odd-row-color"><code>static final record&nbsp;</code></div>
+<div class="col-second odd-row-color"><code><a href="Registry.TrimPatternEntry.html" class="type-name-link" title="class in net.minestom.server.registry">Registry.TrimPatternEntry</a></code></div>
+<div class="col-last odd-row-color">&nbsp;</div>
 </div>
 </section>
 </li>
@@ -178,6 +184,14 @@ loadScripts(document, 'script');</script>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Registry.PotionEffectEntry.html" title="class in net.minestom.server.registry">Registry.PotionEffectEntry</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#potionEffect(java.lang.String,net.minestom.server.registry.Registry.Properties)" class="member-name-link">potionEffect</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
+ @NotNull <a href="Registry.Properties.html" title="interface in net.minestom.server.registry">Registry.Properties</a>&nbsp;main)</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Registry.TrimMaterialEntry.html" title="class in net.minestom.server.registry">Registry.TrimMaterialEntry</a></code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#trimMaterial(java.lang.String,net.minestom.server.registry.Registry.Properties)" class="member-name-link">trimMaterial</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
+ @NotNull <a href="Registry.Properties.html" title="interface in net.minestom.server.registry">Registry.Properties</a>&nbsp;main)</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code>static <a href="Registry.TrimPatternEntry.html" title="class in net.minestom.server.registry">Registry.TrimPatternEntry</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4"><code><a href="#trimPattern(java.lang.String,net.minestom.server.registry.Registry.Properties)" class="member-name-link">trimPattern</a><wbr>(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
  @NotNull <a href="Registry.Properties.html" title="interface in net.minestom.server.registry">Registry.Properties</a>&nbsp;main)</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">&nbsp;</div>
 </div>
@@ -261,6 +275,24 @@ loadScripts(document, 'script');</script>
 <h3>damageType</h3>
 <div class="member-signature"><span class="annotations">@Internal
 </span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Registry.DamageTypeEntry.html" title="class in net.minestom.server.registry">Registry.DamageTypeEntry</a></span>&nbsp;<span class="element-name">damageType</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
+ @NotNull
+ @NotNull <a href="Registry.Properties.html" title="interface in net.minestom.server.registry">Registry.Properties</a>&nbsp;main)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="trimMaterial(java.lang.String,net.minestom.server.registry.Registry.Properties)">
+<h3>trimMaterial</h3>
+<div class="member-signature"><span class="annotations">@Internal
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Registry.TrimMaterialEntry.html" title="class in net.minestom.server.registry">Registry.TrimMaterialEntry</a></span>&nbsp;<span class="element-name">trimMaterial</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
+ @NotNull
+ @NotNull <a href="Registry.Properties.html" title="interface in net.minestom.server.registry">Registry.Properties</a>&nbsp;main)</span></div>
+</section>
+</li>
+<li>
+<section class="detail" id="trimPattern(java.lang.String,net.minestom.server.registry.Registry.Properties)">
+<h3>trimPattern</h3>
+<div class="member-signature"><span class="annotations">@Internal
+</span><span class="modifiers">public static</span>&nbsp;<span class="return-type"><a href="Registry.TrimPatternEntry.html" title="class in net.minestom.server.registry">Registry.TrimPatternEntry</a></span>&nbsp;<span class="element-name">trimPattern</span><wbr><span class="parameters">(<a href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html" title="class or interface in java.lang" class="external-link">String</a>&nbsp;namespace,
  @NotNull
  @NotNull <a href="Registry.Properties.html" title="interface in net.minestom.server.registry">Registry.Properties</a>&nbsp;main)</span></div>
 </section>
