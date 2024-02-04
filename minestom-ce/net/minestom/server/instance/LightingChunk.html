@@ -136,8 +136,8 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-first">Modifier and Type</div>
 <div class="table-header col-second">Method</div>
 <div class="table-header col-last">Description</div>
-<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int[]</code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#calculateHeightMap()" class="member-name-link">calculateHeightMap</a>()</code></div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected org.jglrxavpok.hephaistos.nbt.NBTCompound</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#computeHeightmap()" class="member-name-link">computeHeightmap</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>@NotNull <a href="Chunk.html" title="class in net.minestom.server.instance">Chunk</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#copy(net.minestom.server.instance.Instance,int,int)" class="member-name-link">copy</a><wbr>(@NotNull <a href="Instance.html" title="class in net.minestom.server.instance">Instance</a>&nbsp;instance,
@@ -147,7 +147,13 @@ loadScripts(document, 'script');</script>
 <div class="block">Creates a copy of this chunk, including blocks state id, custom block id, biomes, update data.</div>
 </div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected <a href="../network/packet/server/play/data/LightData.html" title="class in net.minestom.server.network.packet.server.play.data">LightData</a></code></div>
-<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createLightData(boolean)" class="member-name-link">createLightData</a><wbr>(boolean&nbsp;sendLater)</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#createLightData()" class="member-name-link">createLightData</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>int[]</code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#getHeightmap()" class="member-name-link">getHeightmap</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#isLightingCalculated()" class="member-name-link">isLightingCalculated</a>()</code></div>
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>protected void</code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#onLoad()" class="member-name-link">onLoad</a>()</code></div>
@@ -264,18 +270,34 @@ loadScripts(document, 'script');</script>
 </section>
 </li>
 <li>
-<section class="detail" id="calculateHeightMap()">
-<h3>calculateHeightMap</h3>
-<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int[]</span>&nbsp;<span class="element-name">calculateHeightMap</span>()</div>
+<section class="detail" id="isLightingCalculated()">
+<h3>isLightingCalculated</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">isLightingCalculated</span>()</div>
 </section>
 </li>
 <li>
-<section class="detail" id="createLightData(boolean)">
-<h3>createLightData</h3>
-<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="../network/packet/server/play/data/LightData.html" title="class in net.minestom.server.network.packet.server.play.data">LightData</a></span>&nbsp;<span class="element-name">createLightData</span><wbr><span class="parameters">(boolean&nbsp;sendLater)</span></div>
+<section class="detail" id="computeHeightmap()">
+<h3>computeHeightmap</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type">org.jglrxavpok.hephaistos.nbt.NBTCompound</span>&nbsp;<span class="element-name">computeHeightmap</span>()</div>
 <dl class="notes">
 <dt>Overrides:</dt>
-<dd><code><a href="DynamicChunk.html#createLightData(boolean)">createLightData</a></code>&nbsp;in class&nbsp;<code><a href="DynamicChunk.html" title="class in net.minestom.server.instance">DynamicChunk</a></code></dd>
+<dd><code><a href="DynamicChunk.html#computeHeightmap()">computeHeightmap</a></code>&nbsp;in class&nbsp;<code><a href="DynamicChunk.html" title="class in net.minestom.server.instance">DynamicChunk</a></code></dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getHeightmap()">
+<h3>getHeightmap</h3>
+<div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">int[]</span>&nbsp;<span class="element-name">getHeightmap</span>()</div>
+</section>
+</li>
+<li>
+<section class="detail" id="createLightData()">
+<h3>createLightData</h3>
+<div class="member-signature"><span class="modifiers">protected</span>&nbsp;<span class="return-type"><a href="../network/packet/server/play/data/LightData.html" title="class in net.minestom.server.network.packet.server.play.data">LightData</a></span>&nbsp;<span class="element-name">createLightData</span>()</div>
+<dl class="notes">
+<dt>Overrides:</dt>
+<dd><code><a href="DynamicChunk.html#createLightData()">createLightData</a></code>&nbsp;in class&nbsp;<code><a href="DynamicChunk.html" title="class in net.minestom.server.instance">DynamicChunk</a></code></dd>
 </dl>
 </section>
 </li>
